@@ -11,7 +11,7 @@ body {
 
     display: grid;
 }
-
+/* Header, logo, textlogo and front image*/
 header {
     width: 100vw;
     height: 100px;
@@ -46,11 +46,14 @@ h1 {
     width: 100%;
 }
 
+/* Container one Links inside Ul-list*/
 
 .containerOneChoice {
     width: 100vw;
     padding-top: 15px;
+    padding-right: 30px;
 }
+
 
 ul {
     width: 100%;
@@ -65,15 +68,16 @@ ul {
 
 .containerOneChoice__BlueLink a {
     text-decoration: none;
+    min-width: 200px;
     padding: 10px 15px 10px 15px;
     color: black;
     font-weight: bolder;
-}
-
-.containerOneChoice__BlueLink {
     background-color: #8ACFE5;
     border-radius: 3px;
+    text-align: center;
 }
+
+
 
 .containerOneChoice__RedLink a {
     text-decoration: underline;
@@ -83,32 +87,29 @@ ul {
 }
 
 
-
+/* Container two reviews profilepictyre and review texts*/
 
 .containerTwoReviews {
     width: 100vw;
     min-height: 120px;
     padding: 15px;
-    border-bottom: 1px solid black;
     display: flex;
     gap: 10px;
 }
 
-.reviewImageContainer {
+.containerTwoReviews__reviewImageContainer {
     padding-top: 20px;
-    width: 80px;
+    width: 60px;
 }
 
 .containerTwoReviews__ProfilePicture {
     width: 100%;
     border-radius: 30px;
-    align-self: start;
 
 }
 
 .containerTwo__UserRiview {
     width: 100%;
-    white-space-collapse: collapse;
 
 }
 
@@ -121,6 +122,7 @@ ul {
 
 
 
+/* Container three, two cards with swipe function*/
 
 
 
@@ -128,8 +130,6 @@ ul {
 
 .containerThreeChallengesSwipe {
     width: 100vw;
-    height: 410px;
-    border-bottom: 1px solid black;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -138,15 +138,13 @@ ul {
 }
 
 
-
 .containerThreeChallengesSwipe__Card {
-
+    width: 100%;
     height: 360px;
-    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 4px 8px 0 rgba(158, 150, 150, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
     text-align: center;
 
 
@@ -155,7 +153,7 @@ ul {
 .ContainerThreeChallangesSwipe__ChallangeCardContainerScroll {
     display: flex;
     flex-flow: row nowrap;
-    gap: 10px;
+    gap: 20px;
     overflow-x: scroll;
 
 }
@@ -170,14 +168,13 @@ ul {
     background-color: red;
     height: 33px;
     width: 120px;
-    line-height: 25px;
-    align-self: end;
+    line-height: 30px;
+    border-radius: 3px;
 }
 
 .conterThreeChallangesSwipe__LinkHolder,
 a {
 
-    display: block;
     text-decoration: none;
     color: white;
     display: block;
@@ -186,8 +183,7 @@ a {
 
 
 
-
-
+/* Container four two links same class as container one. */
 
 
 .containerFourChoice {
@@ -195,7 +191,7 @@ a {
     width: 100vw;
     height: 120px;
 }
-
+/* Container five, two cards with swipe function*/
 
 .containerFiveStory {
     background-color: #011827;
@@ -206,14 +202,20 @@ a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    
 }
 
-
+.containerFiveStory p {
+padding-bottom: 10px;
+}
 
 .containerFiveStory a {
-    width: fit-content;
+    width: 180px;
+    height: 30px;
     border: 1px solid #8ACFE5;
+    color: #8ACFE5;
     padding: 10px 15px 10px 15px;
+    line-height: 10px;
 }
 
 .playWIthFriendsImage {
@@ -227,14 +229,18 @@ a {
 }
 
 
-.containerSixFriends {
+.containerSixPlayWithFriends {
     display: flex;
     flex-flow: column nowrap;
     width: 100vw;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 30px 10px;
 }
+.containerSixPlayWithFriends p {
 
-.containerSixFriends a {
+    padding-bottom: 10px;
+
+}
+.containerSixPlayWithFriends a {
     background-color: red;
     height: 35px;
     width: 150px;
@@ -255,17 +261,49 @@ width: 100%;
 
 .containerPlayOnline {
     width: 100vw;
+    padding:0px 0px 50px 12px;
+}
+
+.containerPlayOnline a {
+
+    background-color: red;
+    height: 35px;
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 3px;
 }
 
 
 .containerEndInfo {
     width: 100vw;
     background-color: #011827;
-    padding: 20px;
-    display: flex;
-    flex-flow: column nowrap;
+    padding: 12px;
     color: white;
+    display: flex;
+    flex-flow: column;
+    gap:20px;
 }
+.containerEndInfo__FirstColumn {
+
+display: flex;
+flex-flow: column;
+}
+
+.containerEndInfo__SecondColumn {
+
+    display: flex;
+    flex-flow: column
+
+}
+
+.containerEndInfo__ThirdColumn {
+
+    display: flex;
+    flex-flow: column
+
+}
+
 
 
 @media screen and (min-width: 800px) {
