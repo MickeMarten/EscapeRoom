@@ -1,5 +1,5 @@
 * {
-    font-size: 16px;
+    font-size: 12px;
     box-sizing: border-box;
 }
 
@@ -8,7 +8,6 @@ body {
 }
 
 .bigContainer {
-
     display: grid;
 }
 /* Header, logo, textlogo and front image*/
@@ -108,9 +107,9 @@ ul {
 
 }
 
-.containerTwo__UserRiview {
+.containerTwo__UserReviewText {
     width: 100%;
-
+    min-height: 3rem;
 }
 
 .containerTwo__UserRiview small {
@@ -172,7 +171,7 @@ ul {
     border-radius: 3px;
 }
 
-.conterThreeChallangesSwipe__LinkHolder,
+.containerThreeChallangesSwipe__LinkHolder,
 a {
 
     text-decoration: none;
@@ -187,7 +186,7 @@ a {
 
 
 .containerFourChoice {
-    padding: 20px;
+    padding: 20px 75px 0px 0px;
     width: 100vw;
     height: 120px;
 }
@@ -206,7 +205,9 @@ a {
 }
 
 .containerFiveStory p {
+min-height: fit-content;
 padding-bottom: 10px;
+width: fit-content;
 }
 
 .containerFiveStory a {
@@ -308,16 +309,46 @@ flex-flow: column;
 
 @media screen and (min-width: 800px) {
 
-    .containerOneChoice__RedLink {
 
-        background-color: red;
-    }
+   
 
     .containerOneChoice ul {
-
         display: flex;
         flex-direction: row-reverse;
         position: relative;
         top: -60px;
     }
+
+    .containerFourChoice ul {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .containerOneChoice__RedLink {
+        text-decoration: none;
+        background-color: red;
+        padding: 10px 15px 10px 15px;
+        width: 200px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .containerOneChoice__RedLink a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header {
+        width: 100vw;
+        height: 150px;
+        padding: 20px;
+        background-color: #011827;
+        display: flex;
+        gap: 5px;
+    
+    
+    }
+
+
 }
+
