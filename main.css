@@ -1,67 +1,71 @@
 * {
     font-size: 16px;
+    box-sizing: border-box;
 }
+
 body {
-    margin:0;
-    display: block;
+    margin: 0;
 }
 
-.BigContainer {
+.bigContainer {
 
-     display: grid; 
+    display: grid;
 }
+
 header {
-    width: 300px;
-    height: 60px;
-    padding: 15px;
+    width: 100vw;
+    height: 100px;
+    padding: 20px;
     background-color: #011827;
     white-space-collapse: break-spaces;
     display: flex;
     gap: 5px;
-    
-    
+
+
 }
+
 h1 {
     color: white;
-    font-size: 15px;
-   
+    position: relative;
+    top: -8px;
 }
+
+
 .header__Logo {
     width: 100px;
     height: 60px;
 }
 
 .frontImageContainer {
-height: 150px;
-width: 300px;
+
+    width: 100vw;
 
 }
 
 .frontImage {
-width: 300px;
-height: 150px;
+    width: 100%;
 }
 
 
 .containerOneChoice {
-width: 300px;
-height: 140px;
-border-bottom: 1px solid black;
+    width: 100vw;
+    padding-top: 15px;
 }
 
 ul {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 
 }
 
 .containerOneChoice__BlueLink a {
     text-decoration: none;
-    display: block;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
     color: black;
     font-weight: bolder;
 }
@@ -69,44 +73,49 @@ ul {
 .containerOneChoice__BlueLink {
     background-color: #8ACFE5;
     border-radius: 3px;
-    width: 200px;
-    height: 35px;
 }
 
 .containerOneChoice__RedLink a {
-    text-decoration:underline;
+    text-decoration: underline;
     color: #36769D;
     font-weight: bold;
 
 }
 
-    
+
 
 
 .containerTwoReviews {
-width: 300px;
-height: 120px;
-padding: 15px;
-border-bottom: 1px solid black;
-display: flex;
-gap: 10px;
+    width: 100vw;
+    min-height: 120px;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 10px;
 }
 
+.reviewImageContainer {
+    padding-top: 20px;
+    width: 80px;
+}
 
 .containerTwoReviews__ProfilePicture {
-    height: 50px;
-    width: 50px;
+    width: 100%;
     border-radius: 30px;
     align-self: start;
 
 }
 
 .containerTwo__UserRiview {
-white-space-collapse: collapse;
+    width: 100%;
+    white-space-collapse: collapse;
 
 }
+
 .containerTwo__UserRiview small {
+    display: block;
     font-size: 10px;
+    width: 100%;
 }
 
 
@@ -118,26 +127,40 @@ white-space-collapse: collapse;
 
 
 .containerThreeChallengesSwipe {
-width: 300px;
-height: 410px;
-border-bottom: 1px solid black;
-padding-left: 30px;
+    width: 100vw;
+    height: 410px;
+    border-bottom: 1px solid black;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
 
 
 .containerThreeChallengesSwipe__Card {
+
     height: 360px;
-    width: 220px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
     text-align: center;
 
+
 }
-.card-image  {
+
+.ContainerThreeChallangesSwipe__ChallangeCardContainerScroll {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    overflow-x: scroll;
+
+}
+
+.card-image {
     height: 150px;
     width: 220px;
     border-radius: 8px 8px 0px 0px;
@@ -150,7 +173,9 @@ padding-left: 30px;
     line-height: 25px;
     align-self: end;
 }
-.conterThreeChallangesSwipe__LinkHolder,a {
+
+.conterThreeChallangesSwipe__LinkHolder,
+a {
 
     display: block;
     text-decoration: none;
@@ -167,61 +192,94 @@ padding-left: 30px;
 
 .containerFourChoice {
     padding: 20px;
-    width: 300px;
+    width: 100vw;
     height: 120px;
 }
 
 
 .containerFiveStory {
     background-color: #011827;
-    width: 300px;
-    height: 274px;
+    padding: 30px 10px 30px 10px;
+    width: 100vw;
+    text-align: center;
+    color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
-pre {
-width: 0px;
-}
+
 
 .containerFiveStory a {
-    align-self: center;
+    width: fit-content;
+    border: 1px solid #8ACFE5;
+    padding: 10px 15px 10px 15px;
 }
 
 .playWIthFriendsImage {
-
     width: 300px;
     height: 170px;
 }
+
 .containerSixFriends__playWithFriendsImg {
 
-    width: 300px;
-    height: 170px;
+    width: 100vw;
 }
 
 
 .containerSixFriends {
-    width: 300px;
-    height: 274px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vw;
+    padding: 10px 0px 10px 10px;
 }
 
-
-.playOnlineImage {
-    background-color: blue;
-    width: 300px;
-    height: 274px;
+.containerSixFriends a {
+    background-color: red;
+    height: 35px;
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 3px;
 }
 
-.containerPlayOnline{
-    width: 300px;
-    height: 274px;
+.playOnlineImageContainer {
+    width: 100vw;
+
+}
+
+.playOnlineImageContainer__Img {
+width: 100%;
+   
+}
+
+.containerPlayOnline {
+    width: 100vw;
 }
 
 
 .containerEndInfo {
-    width: 300px;
-    height: 274px;
+    width: 100vw;
     background-color: #011827;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .containerOneChoice__RedLink {
+
+        background-color: red;
+    }
+
+    .containerOneChoice ul {
+
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -60px;
+    }
 }
