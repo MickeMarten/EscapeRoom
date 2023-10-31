@@ -1,354 +1,463 @@
 * {
-    font-size: 12px;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0%;
+  font-family: "Roboto";
+  font-size: 15px;
 }
 
-.bigContainer {
-    display: grid;
-}
 /* Header, logo, textlogo and front image*/
 header {
-    width: 100vw;
-    height: 100px;
-    padding: 20px;
-    background-color: #011827;
-    white-space-collapse: break-spaces;
-    display: flex;
-    gap: 5px;
-
-
+  height: 100px;
+  padding: 20px;
+  background-color: #011827;
+  display: flex;
+  gap: 5px;
 }
-
-h1 {
-    color: white;
-    position: relative;
-    top: -8px;
+header h1 {
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: -8px;
 }
-
-
-.header__Logo {
-    width: 100px;
-    height: 60px;
+header .header__Logo {
+  width: 100px;
+  height: 60px;
+}
+header nav {
+  display: none;
+  align-self: flex-end;
+}
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .frontImageContainer {
-
-    width: 100vw;
-
+  width: 100%;
 }
-
-.frontImage {
-    width: 100%;
+.frontImageContainer .frontImage {
+  width: 100%;
+  max-height: 500px;
 }
 
 /* Container one Links inside Ul-list*/
+h2 {
+  font-weight: 500;
+}
 
 .containerOneChoice {
-    width: 100vw;
-    padding-top: 15px;
-    padding-right: 30px;
+  width: 100%;
+  padding-top: 15px;
+  padding-right: 30px;
 }
-
 
 ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.containerOneChoice__BlueLink a {
-    text-decoration: none;
-    min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    color: black;
-    font-weight: bolder;
-    background-color: #8ACFE5;
-    border-radius: 3px;
-    text-align: center;
+.containerOneChoice__BlueLink {
+  text-decoration: none;
+  min-width: 200px;
+  padding: 10px 15px 10px 15px;
+  color: black;
+  font-weight: bold;
+  background-color: #8ACFE5;
+  border-radius: 3px;
+  text-align: center;
 }
 
-
-
-.containerOneChoice__RedLink a {
-    text-decoration: underline;
-    color: #36769D;
-    font-weight: bold;
-
+.containerOneChoice__RedLink {
+  text-decoration: underline;
+  color: #36769D;
 }
-
 
 /* Container two reviews profilepictyre and review texts*/
-
 .containerTwoReviews {
-    width: 100vw;
-    min-height: 120px;
-    padding: 15px;
-    display: flex;
-    gap: 10px;
+  min-height: 120px;
+  padding: 15px;
 }
 
 .containerTwoReviews__reviewImageContainer {
-    padding-top: 20px;
-    width: 60px;
+  padding-top: 20px;
 }
 
 .containerTwoReviews__ProfilePicture {
-    width: 100%;
-    border-radius: 30px;
-
+  width: 50px;
+  border-radius: 30px;
 }
 
 .containerTwo__UserReviewText {
-    width: 100%;
-    min-height: 3rem;
+  max-width: 250px;
+  font-style: oblique;
+  font-weight: 580;
 }
 
-.containerTwo__UserRiview small {
-    display: block;
-    font-size: 10px;
-    width: 100%;
+.containerTwo__UserRiview, small {
+  position: relative;
+  bottom: -5px;
 }
 
+.reviewOne {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
 
-
+.reviewTwo {
+  display: none;
+}
 
 /* Container three, two cards with swipe function*/
-
-
-
-
-
 .containerThreeChallengesSwipe {
-    width: 100vw;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-
-
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 10px 0px;
 }
 
+.containerThreeChallengesSwipe h2 {
+  align-self: center;
+}
 
 .containerThreeChallengesSwipe__Card {
-    width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(158, 150, 150, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-    text-align: center;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+}
 
-
+.containerThreeChallengesSwipe__Stars {
+  display: flex;
+  gap: 4px;
 }
 
 .ContainerThreeChallangesSwipe__ChallangeCardContainerScroll {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 20px;
-    overflow-x: scroll;
-
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+  overflow-x: scroll;
+  max-width: 500px;
 }
 
 .card-image {
-    height: 150px;
-    width: 220px;
-    border-radius: 8px 8px 0px 0px;
+  height: 200px;
+  width: 220px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .containerThreeChallangesSwipe__LinkHolder {
+  background-color: red;
+  height: 33px;
+  width: 120px;
+  line-height: 30px;
+  border-radius: 3px;
+  align-self: end;
+  position: relative;
+  left: -5px;
+  position: relative;
+  top: -12px;
+}
+
+.containerThreeChallangesSwipe__LinkHolder,
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 14px;
+}
+
+/* Container four two links same class as container one. */
+.containerFourChoice ul {
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+/* Container five, two cards with swipe function*/
+.containerFiveStory {
+  background-color: #011827;
+  padding: 40px 0px 70px 0px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.containerFiveStory p {
+  padding-bottom: 1em;
+  max-width: 250px;
+}
+
+.containerFiveStory a {
+  width: 180px;
+  height: 30px;
+  border: 1px solid #8ACFE5;
+  color: #8ACFE5;
+  padding: 10px 15px 10px 15px;
+  line-height: 10px;
+}
+
+.gridContainer {
+  width: 100%;
+}
+
+.playWIthFriendsImage {
+  width: 300px;
+  height: 170px;
+}
+
+.containerSixFriends__playWithFriendsImg {
+  width: 100%;
+}
+
+.containerSixPlayWithFriends {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px 30px 10px;
+}
+
+.containerSixPlayWithFriends p {
+  max-width: 300px;
+}
+
+.containerSixPlayWithFriends a {
+  background-color: red;
+  height: 35px;
+  width: 150px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  align-self: start;
+}
+
+.playOnlineImageContainer {
+  width: 100%;
+}
+
+.playOnlineImageContainer__Img {
+  width: 100%;
+  max-height: 600px;
+}
+
+.containerPlayOnline {
+  width: 100%;
+  padding: 0px 0px 50px 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.containerPlayOnline p {
+  max-width: 300px;
+}
+
+.containerPlayOnline a {
+  background-color: red;
+  height: 35px;
+  width: 150px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  align-self: start;
+}
+
+.containerEndInfo {
+  background-color: #011827;
+  padding: 50px 0px 20px 12px;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  font-size: smaller;
+}
+.containerEndInfo .containerEndInfo,
+.containerEndInfo small {
+  font-size: smaller;
+  max-width: 300px;
+}
+.containerEndInfo .containerEndInfo__FirstColumn a {
+  display: flex;
+  flex-flow: column;
+  font-size: smaller;
+}
+.containerEndInfo .containerEndInfo__SecondColumn a {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: smaller;
+}
+.containerEndInfo .containerEndInfo__ThirdColumn a {
+  display: flex;
+  flex-flow: column;
+  font-size: smaller;
+}
+
+@media screen and (min-width: 800px) {
+  .containerTwoReviews {
+    min-height: 120px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .containerThreeChallengesSwipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+  }
+  .containerSixPlayWithFriends a {
+    background-color: red;
+    height: 35px;
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 3px;
+    align-self: center;
+  }
+  .containerPlayOnline a {
+    background-color: red;
+    height: 35px;
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 3px;
+    align-self: center;
+  }
+  .reviewTwo {
+    display: contents;
+  }
+}
+@media screen and (min-width: 1420px) {
+  header {
+    height: 216px;
+    background-color: #011827;
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+  }
+  header h1 {
+    padding: 20px 0px 0px 10px;
+    color: white;
+    font-size: 2.9em;
+  }
+  header .header__Logo {
+    width: 150px;
+    height: 100px;
+  }
+  header nav {
+    display: contents;
+  }
+  header nav ul {
+    position: relative;
+    right: 450px;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+  header ul a {
+    font-size: 1.5em;
+  }
+  .frontImageContainer {
+    width: 100%;
+    height: 468px;
+  }
+  .frontImageContainer .frontImage {
+    width: 100%;
+    height: 468px;
+  }
+  .containerOneChoice ul {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -60px;
+  }
+  .containerFourChoice ul {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .containerOneChoice__RedLink {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 20px 15px 10px 15px;
+    width: 308px;
+    height: 66px;
+    font-size: 1.5em;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .containerOneChoice__BlueLink {
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 308px;
+    height: 66px;
+    padding: 20px 15px 10px 15px;
+    color: black;
+    font-weight: bold;
+    background-color: #8ACFE5;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .containerThreeChallengesSwipe {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+  }
+  .containerThreeChallengesSwipe h2 {
+    align-self: center;
+  }
+  .containerThreeChallengesSwipe__Card {
+    width: 363px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ContainerThreeChallangesSwipe__ChallangeCardContainerScroll {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+    overflow-x: visible;
+    min-width: 1280px;
+    gap: 50px;
+  }
+  .card-image {
+    height: 219px;
+    width: 363px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .containerThreeChallangesSwipe__LinkHolder {
     background-color: red;
     height: 33px;
     width: 120px;
     line-height: 30px;
     border-radius: 3px;
-}
-
-.containerThreeChallangesSwipe__LinkHolder,
-a {
-
+    align-self: end;
+  }
+  .containerThreeChallangesSwipe__LinkHolder,
+  a {
     text-decoration: none;
     color: white;
     display: block;
     font-size: 14px;
-}
-
-
-
-/* Container four two links same class as container one. */
-
-
-.containerFourChoice {
-    padding: 20px 75px 0px 0px;
-    width: 100vw;
-    height: 120px;
-}
-/* Container five, two cards with swipe function*/
-
-.containerFiveStory {
-    background-color: #011827;
-    padding: 30px 10px 30px 10px;
-    width: 100vw;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    
-}
-
-.containerFiveStory p {
-min-height: fit-content;
-padding-bottom: 10px;
-width: fit-content;
-}
-
-.containerFiveStory a {
-    width: 180px;
-    height: 30px;
-    border: 1px solid #8ACFE5;
-    color: #8ACFE5;
-    padding: 10px 15px 10px 15px;
-    line-height: 10px;
-}
-
-.playWIthFriendsImage {
-    width: 300px;
-    height: 170px;
-}
-
-.containerSixFriends__playWithFriendsImg {
-
-    width: 100vw;
-}
-
-
-.containerSixPlayWithFriends {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100vw;
-    padding: 10px 0px 30px 10px;
-}
-.containerSixPlayWithFriends p {
-
-    padding-bottom: 10px;
-
-}
-.containerSixPlayWithFriends a {
-    background-color: red;
-    height: 35px;
-    width: 150px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 3px;
-}
-
-.playOnlineImageContainer {
-    width: 100vw;
-
-}
-
-.playOnlineImageContainer__Img {
-width: 100%;
-   
-}
-
-.containerPlayOnline {
-    width: 100vw;
-    padding:0px 0px 50px 12px;
-}
-
-.containerPlayOnline a {
-
-    background-color: red;
-    height: 35px;
-    width: 150px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 3px;
-}
-
-
-.containerEndInfo {
-    width: 100vw;
-    background-color: #011827;
-    padding: 12px;
-    color: white;
-    display: flex;
-    flex-flow: column;
-    gap:20px;
-}
-.containerEndInfo__FirstColumn {
-
-display: flex;
-flex-flow: column;
-}
-
-.containerEndInfo__SecondColumn {
-
-    display: flex;
-    flex-flow: column
-
-}
-
-.containerEndInfo__ThirdColumn {
-
-    display: flex;
-    flex-flow: column
-
-}
-
-
-
-@media screen and (min-width: 800px) {
-
-
-   
-
-    .containerOneChoice ul {
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        top: -60px;
-    }
-
-    .containerFourChoice ul {
-        display: flex;
-        flex-direction: row-reverse;
-        
-    }
-
-    .containerOneChoice__RedLink {
-        text-decoration: none;
-        background-color: red;
-        padding: 10px 15px 10px 15px;
-        width: 200px;
-        border-radius: 3px;
-        text-align: center;
-    }
-    .containerOneChoice__RedLink a {
-        text-decoration: none;
-        color: white;
-    }
-
-    header {
-        width: 100vw;
-        height: 150px;
-        padding: 20px;
-        background-color: #011827;
-        display: flex;
-        gap: 5px;
-    
-    
-    }
-
-
-}
-
+  }
+}/*# sourceMappingURL=main.css.map */
