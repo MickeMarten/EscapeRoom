@@ -17,7 +17,9 @@ header {
   gap: 5px;
 }
 header h1 {
-  font-size: 12px;
+  max-width: 50px;
+  font-size: 1em;
+  font-weight: 400;
   color: white;
   position: relative;
   top: -8px;
@@ -36,19 +38,12 @@ header nav ul {
   justify-content: center;
 }
 
-.frontImageContainer {
-  width: 100%;
-}
-.frontImageContainer .frontImage {
+.frontImage {
   width: 100%;
   max-height: 500px;
 }
 
 /* Container one Links inside Ul-list*/
-h2 {
-  font-weight: 500;
-}
-
 .containerOneChoice {
   width: 100%;
   padding-top: 15px;
@@ -67,8 +62,10 @@ ul {
 
 .containerOneChoice__BlueLink {
   text-decoration: none;
-  min-width: 200px;
-  padding: 10px 15px 10px 15px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2em;
   color: black;
   font-weight: bold;
   background-color: #8ACFE5;
@@ -85,43 +82,44 @@ ul {
 .containerTwoReviews {
   min-height: 120px;
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  /* Split up reviews show/noshow */
 }
-
-.containerTwoReviews__reviewImageContainer {
+.containerTwoReviews h2 {
+  font-weight: 500;
+}
+.containerTwoReviews .containerTwoReviews__reviewImageContainer {
   padding-top: 20px;
 }
-
-.containerTwoReviews__ProfilePicture {
+.containerTwoReviews .containerTwoReviews__ProfilePicture {
   width: 50px;
   border-radius: 30px;
 }
-
-.containerTwo__UserReviewText {
-  max-width: 250px;
+.containerTwoReviews .containerTwo__UserReviewText {
+  max-width: 200px;
   font-style: oblique;
-  font-weight: 580;
+  font-weight: 500;
 }
-
-.containerTwo__UserRiview, small {
+.containerTwoReviews .containerTwo__UserRiview,
+.containerTwoReviews small {
   position: relative;
   bottom: -5px;
 }
-
-.reviewOne {
+.containerTwoReviews .reviewOne {
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
 }
-
-.reviewTwo {
+.containerTwoReviews .reviewTwo {
   display: none;
 }
 
-/* Container three, two cards with swipe function*/
+/* Container three, two cards with swipe function.*/
 .containerThreeChallengesSwipe {
   display: flex;
   flex-direction: column;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 10px 10px 50px;
 }
 
 .containerThreeChallengesSwipe h2 {
@@ -129,12 +127,16 @@ ul {
 }
 
 .containerThreeChallengesSwipe__Card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   height: 360px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid black;
+}
+.containerThreeChallengesSwipe__Card p {
+  max-width: 300px;
 }
 
 .containerThreeChallengesSwipe__Stars {
@@ -143,16 +145,20 @@ ul {
 }
 
 .ContainerThreeChallangesSwipe__ChallangeCardContainerScroll {
+  padding-left: 10px;
   display: flex;
   flex-flow: row nowrap;
-  gap: 12px;
+  gap: 10px;
+  min-height: 400px;
+  min-width: 150px;
+  box-sizing: content-box;
   overflow-x: scroll;
   max-width: 500px;
 }
 
 .card-image {
   height: 200px;
-  width: 220px;
+  width: 250px;
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -171,6 +177,7 @@ ul {
 
 .containerThreeChallangesSwipe__LinkHolder,
 a {
+  padding-bottom: 20px;
   text-decoration: none;
   color: white;
   display: block;
@@ -179,14 +186,14 @@ a {
 
 /* Container four two links same class as container one. */
 .containerFourChoice ul {
-  padding: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
 
-/* Container five, two cards with swipe function*/
+/* Container five, text-story with Link at end*/
 .containerFiveStory {
   background-color: #011827;
   padding: 40px 0px 70px 0px;
@@ -197,12 +204,10 @@ a {
   flex-flow: column nowrap;
   align-items: center;
 }
-
 .containerFiveStory p {
   padding-bottom: 1em;
   max-width: 250px;
 }
-
 .containerFiveStory a {
   width: 180px;
   height: 30px;
@@ -212,15 +217,7 @@ a {
   line-height: 10px;
 }
 
-.gridContainer {
-  width: 100%;
-}
-
-.playWIthFriendsImage {
-  width: 300px;
-  height: 170px;
-}
-
+/* Container six images withe friends playing text and link*/
 .containerSixFriends__playWithFriendsImg {
   width: 100%;
 }
@@ -228,13 +225,24 @@ a {
 .containerSixPlayWithFriends {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: start;
   width: 100%;
   padding: 10px 0px 30px 10px;
 }
-
+.containerSixPlayWithFriends strong {
+  font-size: 2em;
+  max-width: 400px;
+}
 .containerSixPlayWithFriends p {
-  max-width: 300px;
+  font-size: 1.4em;
+  max-width: 700px;
+}
+.containerSixPlayWithFriends span a {
+  align-self: end;
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
+  line-height: 50px;
 }
 
 .containerSixPlayWithFriends a {
@@ -263,11 +271,9 @@ a {
   flex-flow: column nowrap;
   align-items: center;
 }
-
-.containerPlayOnline p {
+.containerPlayOnline .containerPlayOnline p {
   max-width: 300px;
 }
-
 .containerPlayOnline a {
   background-color: red;
   height: 35px;
@@ -284,23 +290,22 @@ a {
   color: white;
   display: flex;
   flex-flow: column;
-  gap: 10px;
+  gap: 30px;
   font-size: smaller;
 }
-.containerEndInfo .containerEndInfo,
+.containerEndInfo .containerEndInfo__InfoContainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
 .containerEndInfo small {
   font-size: smaller;
-  max-width: 300px;
+  max-width: 250px;
 }
 .containerEndInfo .containerEndInfo__FirstColumn a {
   display: flex;
   flex-flow: column;
   font-size: smaller;
-}
-.containerEndInfo .containerEndInfo__SecondColumn a {
-  display: flex;
-  flex-flow: column wrap;
-  font-size: smaller;
+  padding: 0px;
 }
 .containerEndInfo .containerEndInfo__ThirdColumn a {
   display: flex;
@@ -309,39 +314,75 @@ a {
 }
 
 @media screen and (min-width: 800px) {
+  /* Review text and profilepicture */
   .containerTwoReviews {
-    min-height: 120px;
+    min-height: 200px;
     padding: 15px;
     display: flex;
     justify-content: center;
+    gap: 70px;
+  }
+  .containerTwoReviews .reviewTwo {
+    display: contents;
+    display: flex;
+    flex-flow: row nowrap;
     gap: 10px;
   }
+  .containerTwoReviews .containerTwo__UserReviewText {
+    max-width: 400px;
+    font-size: 1.3em;
+  }
+  .containerTwoReviews .containerTwo__UserReviewText small {
+    padding-top: 10px;
+    display: block;
+  }
+  .containerTwoReviews .containerTwoReviews__ProfilePicture {
+    width: 80px;
+    border-radius: 50px;
+  }
+  /* Not even touching this */
   .containerThreeChallengesSwipe {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 0px 10px 0px;
   }
-  .containerSixPlayWithFriends a {
-    background-color: red;
-    height: 35px;
-    width: 150px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 3px;
-    align-self: center;
+  .containerSixPlayWithFriends {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
-  .containerPlayOnline a {
-    background-color: red;
-    height: 35px;
-    width: 150px;
-    line-height: 35px;
+  .containerSixPlayWithFriends strong {
     text-align: center;
-    border-radius: 3px;
-    align-self: center;
+    max-width: 400px;
   }
-  .reviewTwo {
-    display: contents;
+  .containerSixPlayWithFriends p {
+    max-width: 400px;
+    text-align: center;
+  }
+  .containerFiveStory p {
+    font-size: 1.4em;
+    max-width: 300px;
+  }
+  .containerFiveStory a {
+    width: 200px;
+    height: 40px;
+    line-height: 15px;
+  }
+  /* Centering */
+  .containerEndInfo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+  }
+  .containerEndInfo a {
+    padding: 0px;
+  }
+  .containerEndInfo .containerEndInfo__ThirdColumn {
+    padding-left: 20px;
+  }
+  .containerEndInfo div :nth-child(5) {
+    padding-top: 10px;
   }
 }
 @media screen and (min-width: 1420px) {
@@ -353,6 +394,8 @@ a {
     gap: 5px;
   }
   header h1 {
+    height: 20px;
+    min-width: 500px;
     padding: 20px 0px 0px 10px;
     color: white;
     font-size: 2.9em;
@@ -362,19 +405,19 @@ a {
     height: 100px;
   }
   header nav {
+    width: 700px;
     display: contents;
-  }
-  header nav ul {
-    position: relative;
-    right: 450px;
-    max-width: 1000px;
     display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-items: end;
+    justify-content: end;
+    gap: 100px;
+    padding-right: 150px;
   }
-  header ul a {
+  header nav a {
+    min-width: 150px;
     font-size: 1.5em;
+  }
+  header nav a:last-child:hover {
+    color: #8ACFE5;
   }
   .frontImageContainer {
     width: 100%;
@@ -407,6 +450,7 @@ a {
   }
   .containerOneChoice__BlueLink {
     text-decoration: none;
+    line-height: 30px;
     font-size: 1.5em;
     width: 308px;
     height: 66px;
@@ -459,5 +503,75 @@ a {
     color: white;
     display: block;
     font-size: 14px;
+  }
+  .containerFiveStory {
+    width: 100%;
+    height: 500px;
+  }
+  .containerFiveStory {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 100px;
+    height: 500px;
+  }
+  .containerFiveStory p {
+    font-size: 1.8em;
+    min-width: 600px;
+  }
+  .containerFiveStory a {
+    font-size: 1.5em;
+    width: 308px;
+    height: 70px;
+    border: 2px solid #8ACFE5;
+    color: #8ACFE5;
+    text-align: center;
+    line-height: 50px;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 350px;
+  }
+  .gridContainer .playOnlineImageContainer__Img {
+    order: 4;
+  }
+  .gridContainer .containerPlayOnline {
+    order: 3;
+  }
+  .gridContainer article {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .gridContainer strong {
+    font-size: 2em;
+    text-align: center;
+    max-width: 400px;
+  }
+  .gridContainer p {
+    font-size: 2em;
+    max-width: 400px;
+    text-align: center;
+  }
+  .containerEndInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 360px;
+    font-size: 1.1em;
+  }
+  .containerEndInfo div {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .containerEndInfo div strong {
+    padding-bottom: 5px;
+  }
+  .containerEndInfo div a {
+    padding: 0px;
+  }
+  .containerEndInfo div :nth-child(5) {
+    padding-top: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
