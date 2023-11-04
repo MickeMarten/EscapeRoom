@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* Color variables*/
 body {
   margin: 0%;
   font-family: "Roboto";
@@ -38,6 +39,7 @@ header nav ul {
   justify-content: center;
 }
 
+/* hacker-man*/
 .frontImage {
   width: 100%;
   max-height: 500px;
@@ -78,7 +80,7 @@ ul {
   color: #36769D;
 }
 
-/* Container two reviews profilepictyre and review texts*/
+/* Container two reviews profilepicture and review texts*/
 .containerTwoReviews {
   min-height: 120px;
   padding: 15px;
@@ -115,7 +117,7 @@ ul {
   display: none;
 }
 
-/* Container three, two cards with swipe function.*/
+/* Container three, three cards with swipe function.*/
 .containerThreeChallengesSwipe {
   display: flex;
   flex-direction: column;
@@ -175,8 +177,7 @@ ul {
   top: -12px;
 }
 
-.containerThreeChallangesSwipe__LinkHolder,
-a {
+.containerThreeChallangesSwipe__LinkHolder a {
   padding-bottom: 20px;
   text-decoration: none;
   color: white;
@@ -209,6 +210,7 @@ a {
   max-width: 250px;
 }
 .containerFiveStory a {
+  text-decoration: none;
   width: 180px;
   height: 30px;
   border: 1px solid #8ACFE5;
@@ -217,73 +219,47 @@ a {
   line-height: 10px;
 }
 
-/* Container six images withe friends playing text and link*/
-.containerSixFriends__playWithFriendsImg {
-  width: 100%;
-}
-
+/* Container six images with friends or Online  text and link*/
 .containerSixPlayWithFriends {
   display: flex;
   flex-flow: column nowrap;
-  align-items: start;
+  align-items: center;
   width: 100%;
   padding: 10px 0px 30px 10px;
 }
 .containerSixPlayWithFriends strong {
   font-size: 2em;
-  max-width: 400px;
+  max-width: 500px;
 }
 .containerSixPlayWithFriends p {
   font-size: 1.4em;
-  max-width: 700px;
+  max-width: 400px;
 }
 .containerSixPlayWithFriends span a {
-  align-self: end;
-  width: 200px;
-  height: 50px;
-  font-size: 1.2em;
-  line-height: 50px;
-}
-
-.containerSixPlayWithFriends a {
+  display: block;
+  text-decoration: none;
+  color: white;
   background-color: red;
-  height: 35px;
-  width: 150px;
-  line-height: 35px;
+  font-size: 1.2em;
+  height: 50px;
+  width: 200px;
+  line-height: 50px;
   text-align: center;
   border-radius: 3px;
   align-self: start;
 }
 
-.playOnlineImageContainer {
-  width: 100%;
-}
-
+/*  Container six image */
 .playOnlineImageContainer__Img {
   width: 100%;
   max-height: 600px;
 }
 
-.containerPlayOnline {
+.containerSixFriends__playWithFriendsImg {
   width: 100%;
-  padding: 0px 0px 50px 12px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-.containerPlayOnline .containerPlayOnline p {
-  max-width: 300px;
-}
-.containerPlayOnline a {
-  background-color: red;
-  height: 35px;
-  width: 150px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 3px;
-  align-self: start;
 }
 
+/*  Footer container Strong, small and Links */
 .containerEndInfo {
   background-color: #011827;
   padding: 50px 0px 20px 12px;
@@ -299,22 +275,29 @@ a {
 }
 .containerEndInfo small {
   font-size: smaller;
-  max-width: 250px;
+  max-width: 300px;
 }
 .containerEndInfo .containerEndInfo__FirstColumn a {
   display: flex;
   flex-flow: column;
   font-size: smaller;
-  padding: 0px;
+  text-decoration: none;
+  color: white;
+}
+.containerEndInfo .containerEndInfo__FirstColumn :nth-child(5) {
+  padding-top: 10px;
 }
 .containerEndInfo .containerEndInfo__ThirdColumn a {
   display: flex;
   flex-flow: column;
   font-size: smaller;
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 800px) {
-  /* Review text and profilepicture */
+  /* Centering making text and links bigger */
+  /* Review text and profilepicture centering and making larger. */
   .containerTwoReviews {
     min-height: 200px;
     padding: 15px;
@@ -340,13 +323,25 @@ a {
     width: 80px;
     border-radius: 50px;
   }
-  /* Not even touching this */
+  /*  Centering Container swipe cards  */
   .containerThreeChallengesSwipe {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 0px 10px 0px;
   }
+  /*  Centering Container five */
+  .containerFiveStory p {
+    font-size: 1.4em;
+    max-width: 300px;
+  }
+  .containerFiveStory a {
+    width: 200px;
+    height: 40px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  /*  Centering Container six */
   .containerSixPlayWithFriends {
     display: flex;
     flex-flow: column;
@@ -357,26 +352,17 @@ a {
     max-width: 400px;
   }
   .containerSixPlayWithFriends p {
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
   }
-  .containerFiveStory p {
-    font-size: 1.4em;
-    max-width: 300px;
-  }
-  .containerFiveStory a {
-    width: 200px;
-    height: 40px;
-    line-height: 15px;
-  }
-  /* Centering */
+  /*  Centering footer container and text.*/
   .containerEndInfo {
     display: flex;
     align-items: center;
     font-size: 1.2em;
   }
-  .containerEndInfo a {
-    padding: 0px;
+  .containerEndInfo .containerEndInfo__InfoContainer {
+    text-align: center;
   }
   .containerEndInfo .containerEndInfo__ThirdColumn {
     padding-left: 20px;
@@ -386,6 +372,7 @@ a {
   }
 }
 @media screen and (min-width: 1420px) {
+  /*  Header section */
   header {
     height: 216px;
     background-color: #011827;
@@ -419,6 +406,7 @@ a {
   header nav a:last-child:hover {
     color: #8ACFE5;
   }
+  /*  Images below heading */
   .frontImageContainer {
     width: 100%;
     height: 468px;
@@ -427,6 +415,8 @@ a {
     width: 100%;
     height: 468px;
   }
+  /*  Container Four Red and Blue Links Red Links changeing position and getting width, hight and color*/
+  /*  Nesting dosen't work*/
   .containerOneChoice ul {
     display: flex;
     flex-direction: row-reverse;
@@ -461,6 +451,7 @@ a {
     border-radius: 3px;
     text-align: center;
   }
+  /*  Swipe cards, not working at first. Now magic happend. */
   .containerThreeChallengesSwipe {
     display: flex;
     flex-direction: column;
@@ -508,6 +499,7 @@ a {
     width: 100%;
     height: 500px;
   }
+  /*  Container five text and link */
   .containerFiveStory {
     display: flex;
     flex-flow: column nowrap;
@@ -527,16 +519,16 @@ a {
     text-align: center;
     line-height: 50px;
   }
+  /*  Dividing aritcle and images into 4 grid-rows */
   .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 350px;
+    /*  Image in container Six */
+    /* Text inside container six  */
   }
   .gridContainer .playOnlineImageContainer__Img {
     order: 4;
-  }
-  .gridContainer .containerPlayOnline {
-    order: 3;
   }
   .gridContainer article {
     display: flex;
@@ -545,21 +537,32 @@ a {
   }
   .gridContainer strong {
     font-size: 2em;
-    text-align: center;
-    max-width: 400px;
+    max-width: 472px;
+    text-align: left;
   }
   .gridContainer p {
-    font-size: 2em;
-    max-width: 400px;
-    text-align: center;
+    font-size: 1.8em;
+    max-width: 472px;
+    text-align: left;
   }
+  .gridContainer span {
+    min-width: 472px;
+  }
+  .gridContainer span a {
+    font-size: 1.5em;
+    width: 308px;
+    height: 66px;
+    line-height: 70px;
+  }
+  /* Footer container */
   .containerEndInfo {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: center;
     height: 360px;
-    font-size: 1.1em;
+  }
+  .containerEndInfo .containerEndInfo__ThirdColumn {
+    min-height: 120px;
   }
   .containerEndInfo div {
     display: flex;
@@ -567,9 +570,11 @@ a {
   }
   .containerEndInfo div strong {
     padding-bottom: 5px;
+    text-align: left;
   }
-  .containerEndInfo div a {
-    padding: 0px;
+  .containerEndInfo div small {
+    max-width: 350px;
+    text-align: left;
   }
   .containerEndInfo div :nth-child(5) {
     padding-top: 10px;

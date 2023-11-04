@@ -3,6 +3,8 @@
 
 }
 
+
+/* Color variables*/
 $backroundcolor: #011827;
 $bluecolor: #36769D;
 $lightblue: #8ACFE5;
@@ -59,6 +61,7 @@ header {
 }
 
 
+/* hacker-man*/
 .frontImage {
     width: 100%;
     max-height: 500px;
@@ -105,13 +108,13 @@ ul {
 .containerOneChoice__RedLink {
     text-decoration: underline;
     color: $bluecolor;
-
+    
 
 
 }
 
 
-/* Container two reviews profilepictyre and review texts*/
+/* Container two reviews profilepicture and review texts*/
 
 .containerTwoReviews {
     min-height: 120px;
@@ -139,7 +142,7 @@ ul {
         font-style: oblique;
         font-weight: 500;
 
-       
+
 
     }
 
@@ -150,6 +153,7 @@ ul {
         bottom: -5px;
 
     }
+
     /* Split up reviews show/noshow */
 
     .reviewOne {
@@ -168,13 +172,13 @@ ul {
 
 
 
-/* Container three, two cards with swipe function.*/
+/* Container three, three cards with swipe function.*/
 
 .containerThreeChallengesSwipe {
     display: flex;
     flex-direction: column;
     padding: 0px 10px 10px 50px;
-    
+
 }
 
 .containerThreeChallengesSwipe h2 {
@@ -241,8 +245,7 @@ ul {
 
 }
 
-.containerThreeChallangesSwipe__LinkHolder,
-a {
+.containerThreeChallangesSwipe__LinkHolder a {
     padding-bottom: 20px;
     text-decoration: none;
     color: white;
@@ -264,7 +267,7 @@ a {
         flex-flow: column nowrap;
         justify-content: center;
     }
-    
+
 
 }
 
@@ -288,6 +291,8 @@ a {
     }
 
     a {
+        text-decoration: none;
+
         width: 180px;
         height: 30px;
         border: 1px solid $lightblue;
@@ -300,63 +305,53 @@ a {
 
 
 
-/* Container six images withe friends playing text and link*/
-.containerSixFriends__playWithFriendsImg {
+/* Container six images with friends or Online  text and link*/
 
-    width: 100%;
-}
 
 
 .containerSixPlayWithFriends {
     display: flex;
     flex-flow: column nowrap;
-    align-items: start;
+    align-items: center;
     width: 100%;
     padding: 10px 0px 30px 10px;
 
     strong {
         font-size: 2em;
-        max-width: 400px;
+        max-width: 500px;
     }
 
     p {
         font-size: 1.4em;
-        max-width: 700px;
+        max-width: 400px;
     }
 
 
     span {
+       
+
         a {
-            align-self: end;
-            width: 200px;
-            height: 50px;
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: red;
             font-size: 1.2em;
+            height: 50px;
+            width: 200px;
             line-height: 50px;
+            text-align: center;
+            border-radius: 3px;
+            align-self: start;
+    
         }
-
-
     }
 }
 
 
 
-.containerSixPlayWithFriends  {
 
-    a {
-    background-color: red;
-    height: 35px;
-    width: 150px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 3px;
-    align-self: start;
+/*  Container six image */
 
-}
-}
-
-.playOnlineImageContainer {
-    width: 100%;
-}
 
 .playOnlineImageContainer__Img {
     width: 100%;
@@ -365,28 +360,9 @@ a {
 
 }
 
-.containerPlayOnline {
+.containerSixFriends__playWithFriendsImg {
+
     width: 100%;
-    padding: 0px 0px 50px 12px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-
-    .containerPlayOnline p {
-        max-width: 300px;
-    
-    }
-
-    a {
-        background-color: red;
-        height: 35px;
-        width: 150px;
-        line-height: 35px;
-        text-align: center;
-        border-radius: 3px;
-        align-self: start;
-
-    }
 }
 
 
@@ -394,6 +370,7 @@ a {
 
 
 
+/*  Footer container Strong, small and Links */
 
 .containerEndInfo {
     background-color: $backroundcolor;
@@ -417,7 +394,7 @@ a {
 
     small {
         font-size: smaller;
-        max-width: 250px;
+        max-width: 300px;
 
     }
 
@@ -430,20 +407,30 @@ a {
             display: flex;
             flex-flow: column;
             font-size: smaller;
-            padding: 0px;
+            text-decoration: none;
+            color: white;
         }
+        :nth-child(5) {
 
+            padding-top: 10px;
+        }
 
 
     }
 
 
 
-    .containerEndInfo__ThirdColumn a {
+    .containerEndInfo__ThirdColumn {
 
-        display: flex;
-        flex-flow: column;
-        font-size: smaller;
+        a {
+
+            display: flex;
+            flex-flow: column;
+            font-size: smaller;
+            text-decoration: none;
+            color: white;
+
+        }
 
 
     }
@@ -455,8 +442,10 @@ a {
 
 
 @media screen and (min-width: 800px) {
+    /* Centering making text and links bigger */
 
-/* Review text and profilepicture */
+
+    /* Review text and profilepicture centering and making larger. */
     .containerTwoReviews {
         min-height: 200px;
         padding: 15px;
@@ -489,9 +478,8 @@ a {
         }
     }
 
+/*  Centering Container swipe cards  */
 
-
-/* Not even touching this */
     .containerThreeChallengesSwipe {
         display: flex;
         flex-direction: column;
@@ -501,8 +489,27 @@ a {
     }
 
 
-    
-    
+ /*  Centering Container five */
+    .containerFiveStory {
+
+        p {
+
+            font-size: 1.4em;
+            max-width: 300px;
+        }
+
+        a {
+            width: 200px;
+            height: 40px;
+            line-height: 20px;
+            font-weight: 500;
+            
+
+        }
+
+    }
+
+    /*  Centering Container six */
     .containerSixPlayWithFriends {
 
         display: flex;
@@ -513,48 +520,26 @@ a {
             text-align: center;
             max-width: 400px;
         }
+
         p {
-            max-width: 400px;
+            max-width: 500px;
             text-align: center;
         }
-        
 
-      
+
+
     }
 
-
-    .containerFiveStory {
-
-            p {
-
-                font-size: 1.4em;
-                max-width: 300px;
-            }
-
-            a {
-                width: 200px;
-                height: 40px;
-                line-height: 15px;
-            
-            }
-
-            }
-    
-
-   
-
- 
-
-/* Centering */
+/*  Centering footer container and text.*/
     .containerEndInfo {
         display: flex;
         align-items: center;
         font-size: 1.2em;
 
-        a {
+       .containerEndInfo__InfoContainer {
+        text-align: center;
 
-            padding: 0px;
-        }
+       }
 
         .containerEndInfo__ThirdColumn {
 
@@ -578,7 +563,7 @@ a {
 
 
 @media screen and (min-width: 1420px) {
-
+/*  Header section */
     header {
         height: 216px;
         background-color: $backroundcolor;
@@ -628,7 +613,7 @@ a {
 
 
     }
-
+/*  Images below heading */
     .frontImageContainer {
 
         width: 100%;
@@ -641,6 +626,8 @@ a {
 
     }
 
+    /*  Container Four Red and Blue Links Red Links changeing position and getting width, hight and color*/
+    /*  Nesting dosen't work*/
     .containerOneChoice ul {
         display: flex;
         flex-direction: row-reverse;
@@ -679,7 +666,7 @@ a {
         border-radius: 3px;
         text-align: center;
     }
-
+/*  Swipe cards, not working at first. Now magic happend. */
     .containerThreeChallengesSwipe {
         display: flex;
         flex-direction: column;
@@ -735,10 +722,10 @@ a {
     .containerFiveStory {
         width: 100%;
         height: 500px;
-        
+
 
     }
-
+/*  Container five text and link */
     .containerFiveStory {
         display: flex;
         flex-flow: column nowrap;
@@ -765,23 +752,20 @@ a {
 
 
 
-
+/*  Dividing aritcle and images into 4 grid-rows */
     .gridContainer {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 350px;
-
+/*  Image in container Six */
         .playOnlineImageContainer__Img {
             order: 4;
 
         }
 
-        .containerPlayOnline {
-            order: 3;
-
-        }
-
+        
+/* Text inside container six  */
         article {
 
             display: flex;
@@ -793,28 +777,43 @@ a {
 
         strong {
             font-size: 2em;
-            text-align: center;
-            max-width: 400px;
+            max-width: 472px;
+            text-align: left;
         }
 
         p {
-            font-size: 2em;
-            max-width: 400px;
-            text-align: center;
+            font-size: 1.8em;
+            max-width: 472px;
+            text-align: left;
         }
+
+            span {
+                min-width: 472px;
+
+                a {
+                    font-size: 1.5em;
+                    width: 308px;
+                    height: 66px;
+                    line-height: 70px;
+                }
+            }
+
 
 
     }
 
-   
 
+    /* Footer container */
     .containerEndInfo {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        align-items: center;
         height: 360px;
-        font-size: 1.1em;
+
+     .containerEndInfo__ThirdColumn {
+
+        min-height: 120px;
+     }
 
         div {
             display: flex;
@@ -822,12 +821,15 @@ a {
 
             strong {
                 padding-bottom: 5px;
+                text-align: left;
             }
 
-            a {
-                padding: 0px;
-
+            small {
+                max-width: 350px;
+                text-align: left;
             }
+
+          
 
             :nth-child(5) {
 
