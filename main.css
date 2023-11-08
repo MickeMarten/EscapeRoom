@@ -47,10 +47,6 @@ header .header__menuBtn {
   display: none;
 }
 
-.mobileMenuContainer__hidden2 {
-  display: none;
-}
-
 .mobileMenuContainer {
   position: fixed;
   padding: 20px 0px 0px 0px;
