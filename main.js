@@ -10,7 +10,8 @@ const exitBtn = document.querySelector('#MobileMenuContainer__ExitBtn');
 //mobileMenuContainer.classList.remove('mobileMenuContainer');  
 //})
 
- function toggleMobileMenu () {
+ 
+function toggleMobileMenu () {
     mobileMenuContainer.classList.toggle('mobileMenuContainer');
     mobileMenuContainer.classList.toggle('mobileMenuContainer__hidden');
 
