@@ -39,8 +39,10 @@ header nav ul {
   justify-content: center;
 }
 header .header__menuBtn {
+  margin-left: 200px;
   height: 20px;
   width: 30px;
+  align-self: start;
 }
 
 .mobileMenuContainer__hidden {
@@ -62,15 +64,14 @@ header .header__menuBtn {
 }
 
 .mobileMenu {
-  min-width: 500px;
-  min-height: 840px;
+  width: 90%;
+  min-height: 700px;
   padding: 0px 0px 50px 0px;
   font-size: 2em;
   background-color: #011827;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
   position: fixed;
   z-index: 2;
   animation-name: mobileMenu2;
@@ -81,10 +82,9 @@ header .header__menuBtn {
   width: 50px;
   height: 50px;
   padding: 10px 10px 0px 0px;
-  position: relative;
-  bottom: 60px;
 }
 .mobileMenu a {
+  margin: 50px;
   text-decoration: none;
   color: white;
   font-weight: bolder;
