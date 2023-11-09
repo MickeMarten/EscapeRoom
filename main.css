@@ -15,15 +15,18 @@ header {
   padding: 20px;
   background-color: #011827;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   gap: 5px;
 }
 header h1 {
-  max-width: 50px;
+  width: 50px;
   font-size: 1em;
   font-weight: 400;
   color: white;
   position: relative;
   top: -8px;
+  margin-right: auto;
 }
 header .header__Logo {
   width: 100px;
@@ -39,10 +42,8 @@ header nav ul {
   justify-content: center;
 }
 header .header__menuBtn {
-  margin-left: 200px;
   height: 20px;
   width: 30px;
-  align-self: start;
 }
 
 .mobileMenuContainer__hidden {
