@@ -64,7 +64,7 @@ header .header__menuBtn {
   animation-timing-function: ease-in;
 }
 
-.mobileMenu {
+.mobileMenuContainer__Menu {
   width: 90%;
   min-height: 700px;
   padding: 0px 0px 50px 0px;
@@ -79,7 +79,7 @@ header .header__menuBtn {
   animation-name: mobileMenu2;
   animation-duration: 0.2s;
 }
-.mobileMenu img {
+.mobileMenuContainer__Menu img {
   align-self: end;
   width: 50px;
   height: 50px;
@@ -87,7 +87,7 @@ header .header__menuBtn {
   position: relative;
   bottom: 100px;
 }
-.mobileMenu a {
+.mobileMenuContainer__Menu a {
   text-decoration: none;
   color: white;
   font-weight: bolder;
@@ -261,17 +261,18 @@ ul {
   align-items: center;
 }
 .containerFiveStory p {
-  padding-bottom: 1em;
-  max-width: 250px;
+  padding-bottom: 15px;
+  max-width: 400px;
+  font-size: 1.7em;
 }
 .containerFiveStory a {
   text-decoration: none;
-  width: 180px;
-  height: 30px;
+  width: 200px;
+  height: 50px;
   border: 1px solid #8ACFE5;
   color: #8ACFE5;
   padding: 10px 15px 10px 15px;
-  line-height: 10px;
+  line-height: 25px;
 }
 
 /* Container six images with friends or Online  text and link*/
@@ -352,6 +353,10 @@ ul {
 
 @media screen and (min-width: 800px) {
   /* Centering making text and links bigger */
+  /* Menu button is set to display none*/
+  .header__menuBtn {
+    display: none;
+  }
   /* Review text and profilepicture centering and making larger. */
   .containerTwoReviews {
     min-height: 200px;
@@ -387,14 +392,13 @@ ul {
   }
   /*  Centering Container five */
   .containerFiveStory p {
-    font-size: 1.4em;
-    max-width: 300px;
+    max-width: 400px;
+    font-size: 1.7em;
   }
   .containerFiveStory a {
     width: 200px;
-    height: 40px;
-    line-height: 20px;
-    font-weight: 500;
+    height: 50px;
+    line-height: 25px;
   }
   /*  Centering Container six */
   .containerSixPlayWithFriends {

@@ -89,7 +89,7 @@ header {
 }
 
 
-.mobileMenu {
+.mobileMenuContainer__Menu {
     width: 90%;
     min-height: 700px;
     padding: 0px 0px 50px 0px;
@@ -350,20 +350,21 @@ ul {
 
 
     p {
-        padding-bottom: 1em;
-        max-width: 250px;
+        padding-bottom: 15px;
+        max-width: 400px;
+        font-size: 1.7em;
 
     }
 
     a {
         text-decoration: none;
 
-        width: 180px;
-        height: 30px;
+        width: 200px;
+        height: 50px;
         border: 1px solid $lightblue;
         color: $lightblue;
         padding: 10px 15px 10px 15px;
-        line-height: 10px;
+        line-height: 25px;
     }
 }
 
@@ -509,7 +510,10 @@ ul {
 @media screen and (min-width: 800px) {
     /* Centering making text and links bigger */
 
-
+    /* Menu button is set to display none*/
+    .header__menuBtn {
+        display: none;
+    }
     /* Review text and profilepicture centering and making larger. */
     .containerTwoReviews {
         min-height: 200px;
@@ -558,16 +562,15 @@ ul {
     .containerFiveStory {
 
         p {
-
-            font-size: 1.4em;
-            max-width: 300px;
+            max-width: 400px;
+            font-size: 1.7em;
+            
         }
 
         a {
             width: 200px;
-            height: 40px;
-            line-height: 20px;
-            font-weight: 500;
+            height: 50px;
+            line-height: 25px;
             
 
         }
