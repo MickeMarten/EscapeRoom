@@ -73,6 +73,7 @@ header .header__menuBtn {
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 2;
   animation-name: mobileMenu2;
@@ -83,12 +84,14 @@ header .header__menuBtn {
   width: 50px;
   height: 50px;
   padding: 20px 20px 0px 0px;
+  position: relative;
+  bottom: 100px;
 }
 .mobileMenu a {
-  margin: 50px;
   text-decoration: none;
   color: white;
   font-weight: bolder;
+  margin: 30px;
 }
 
 /* hacker-man*/
