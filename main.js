@@ -10,12 +10,14 @@ const exitBtn = document.querySelector('#MobileMenuContainer__ExitBtn');
 //mobileMenuContainer.classList.remove('mobileMenuContainer');  
 //})
 
- 
+// Make function that toogles between to classes.
 function toggleMobileMenu () {
     mobileMenuContainer.classList.toggle('mobileMenuContainer');
     mobileMenuContainer.classList.toggle('mobileMenuContainer__hidden');
 
 }
+
+// EventListener on menubutton and menuExitBtn with the toggleMobileMenu function. Makes the menu open or close.
 
 menuBtn.addEventListener('click', toggleMobileMenu);
 exitBtn.addEventListener('click', toggleMobileMenu);
